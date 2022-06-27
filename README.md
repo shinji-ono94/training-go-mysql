@@ -1,6 +1,11 @@
 ## タスク
 - [x] branchを理解する。
+- [x] mergeを理解する。
 - [x] gitignoreを理解する。
 - [] github actionを理解する。
+- [] pprofを理解する。
 - [] indexを理解する。
-- [x] ///
+- [] sqlチューニングを理解する。
+- [] databaseを改造する。
+- [] モニタリング手法を理解する。
+- [] 
