@@ -4,6 +4,7 @@
 - [x] gitignoreを理解する。
 - [x] github actionを理解する。
 DockerのCIは、Proアカウントが必要。
+Githubレジストリにイメージをプッシュする。
 - [] pprofを理解する。
 - [] indexを理解する。
 - [] sqlチューニングを理解する。
