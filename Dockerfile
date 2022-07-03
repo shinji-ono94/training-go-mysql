@@ -9,11 +9,13 @@ RUN mkdir /go/src/app
 WORKDIR /go/src/app
 # ホストのファイルをコンテナの作業ディレクトリに移行
 ADD . /go/src/app
-# RUN GO111MODULE=off go get github.com/oxequa/realize
-    # sqlを使うためのモジュール
+# sqlを使うためのモジュール
 RUN go get -u github.com/go-sql-driver/mysql
+# go mod
+RUN go mod init
+RUN go mod tidy
 # CMD ["realize", "start"]
-RUN go build -o go-app app/main.go && \
-    chmod 770 go-app && \
-    mv go-app /
+RUN go build -o go-app app/main.go
+RUN chmod 770 go-app
+RUN mv go-app
 ENTRYPOINT ["/go-app"]
