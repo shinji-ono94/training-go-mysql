@@ -1,6 +1,6 @@
 # 2020/10/14最新versionを取得
-FROM golang:1.15.2-alpine
-#FROM golang:1.13.12
+# FROM golang:1.15.2-alpine
+FROM golang:1.13.12
 # アップデートとgitのインストール
 RUN apk update && apk add git
 # appディレクトリの作成
