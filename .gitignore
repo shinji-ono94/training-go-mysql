@@ -1,2 +1,4 @@
 # dataフォルダは要らない
 mysql/data/
+
+.github\ansible_playbook.yml

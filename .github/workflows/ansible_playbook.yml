@@ -1,5 +1,7 @@
 name: Ansible Playbook
-on: push
+on: 
+  push:
+    tags: check
 
 jobs:
   deploy:
