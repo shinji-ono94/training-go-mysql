@@ -8,6 +8,7 @@ import (
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/pkg/profile"
 )
 
 // Embed htmlファイルに埋め込むデータ構造体
@@ -36,6 +37,8 @@ var usr = make(map[int]User)
 var templates = make(map[string]*template.Template)
 
 func main() {
+	defer profile.Start(profile.ProfilePath(".")).Stop()
+
 	// database
 	db, dbErr := sql.Open(DriverName, DataSourceName)
 	if dbErr != nil {
