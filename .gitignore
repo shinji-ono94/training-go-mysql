@@ -1,4 +1,4 @@
 # dataフォルダは要らない
 mysql/data/
 
-.github
+.github/
