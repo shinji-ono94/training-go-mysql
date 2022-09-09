@@ -15,3 +15,6 @@ Githubレジストリにイメージをプッシュする。
 ## リンク
 - [Dockerイメージの公開](https://docs.github.com/ja/actions/publishing-packages/publishing-docker-images)
 - [適切なインデックスを張るために](https://qiita.com/kodai-saito/items/541e4fe46c2d3edc9634)
+
+## トラブル
+- [wsl1から2への移行](https://qiita.com/ryamamoto0406/items/d43f19e8821d3e28f1cb)
